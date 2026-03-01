@@ -123,13 +123,12 @@ if page == "🏠 系统概览":
 
     st.success("✅ 系统状态：在线 | 区块链节点：运行中 | 检测模型：FSCP-Enhancer + BMNet 已加载")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     with col1:
         st.metric(label="当前区块高度", value=len(st.session_state.blockchain.chain))
     with col2:
         st.metric(label="保护视频数量", value=sum(len(b.transactions) for b in st.session_state.blockchain.chain))
-    with col3:
-        st.metric(label="系统拦截次数", value="12")
+
 
     st.markdown("---")
     # st.image("F:/GDproject/blockchain/1.png", use_container_width=True)
@@ -398,3 +397,4 @@ elif page == "📜 区块链浏览器":
 
 
 # streamlit run "F:\GDproject\blockchain\app.py"
+
