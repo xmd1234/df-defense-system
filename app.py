@@ -108,7 +108,7 @@ page = st.sidebar.radio(
 )
 st.sidebar.markdown("---")
 st.sidebar.info(
-    "**毕业设计演示原型**\n\n"
+
     "集成 BMNet 检测算法与区块链溯源技术，"
     "实现全生命周期的多媒体内容安全防护。"
 )
@@ -119,7 +119,7 @@ st.sidebar.info(
 
 if page == "🏠 系统概览":
     st.title("🛡️ 基于区块链与深度学习的伪造防范系统")
-    st.markdown("### Graduate Thesis Project: Deepfake Defense System")
+
 
     st.success("✅ 系统状态：在线 | 区块链节点：运行中 | 检测模型：FSCP-Enhancer + BMNet 已加载")
 
@@ -132,7 +132,7 @@ if page == "🏠 系统概览":
         st.metric(label="系统拦截次数", value="12")
 
     st.markdown("---")
-    st.image("1.png", use_container_width=True)
+    st.image("F:/GDproject/blockchain/1.png", use_container_width=True)
     st.info(
         """
         1. **源端 (Source)**: 视频采集 -> 生成哈希 -> 绑定设备ID -> **上链存证**。
