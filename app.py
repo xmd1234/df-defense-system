@@ -6,7 +6,7 @@ import pandas as pd
 import datetime
 import random
 
-
+#streamlit run "F:\GDproject\blockchain\app.py"
 # ===========================
 # 底层逻辑：区块链与模拟器
 # ===========================
@@ -121,7 +121,7 @@ if page == "🏠 系统概览":
     st.title("🛡️ 基于区块链与深度学习的伪造防范系统")
     st.markdown("### Graduate Thesis Project: Deepfake Defense System")
 
-    st.success("✅ 系统状态：在线 | 区块链节点：运行中 | 检测模型：FSCP-Enhance + BMNet 已加载")
+    st.success("✅ 系统状态：在线 | 区块链节点：运行中 | 检测模型：FSCP-Enhancer + BMNet 已加载")
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -132,7 +132,7 @@ if page == "🏠 系统概览":
         st.metric(label="系统拦截次数", value="12")
 
     st.markdown("---")
-    st.subheader("🗺️ 系统架构规划 (PPT P18)")
+    st.image("1.png", use_container_width=True)
     st.info(
         """
         1. **源端 (Source)**: 视频采集 -> 生成哈希 -> 绑定设备ID -> **上链存证**。
