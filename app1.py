@@ -147,8 +147,8 @@ if page == "🏠 系统概览":
         st.metric(label="系统拦截次数", value="12")
 
     st.markdown("---")
-    st.image("F:/GDproject/blockchain/1.png", use_container_width=True)
-    # st.image("1.png", use_container_width=True)
+    # st.image("F:/GDproject/blockchain/1.png", use_container_width=True)
+    st.image("1.png", use_container_width=True)
     st.info(
         """
         1. **源端 (Source)**: 视频采集 -> 生成哈希 -> 绑定设备ID -> **上链存证（写入 Ganache 私链）**。
